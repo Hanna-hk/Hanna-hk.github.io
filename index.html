@@ -20,11 +20,31 @@
             padding: 20px;
         }
         
-        header {
-            text-align: center;
+         header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             padding: 40px 0;
-            background: #f4f4f4;
+            background: linear-gradient(135deg, #6a89cc 0%, #4a69bd 100%);
             margin-bottom: 30px;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .profile-container {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
         
         h1 {
@@ -89,41 +109,51 @@
 </head>
 <body>
     <header>
+        <div class="profile-container">
+            <img src="photo/me.jpg" alt="Hanna Krechyk" class="profile-img">
+        </div>
         <h1>Hanna Krechyk</h1>
-        <p>...</p>
     </header>
     
     <section class="about">
         <h2>About Me</h2>
-        <p>...</p>
+        <p>
+            I'm a second-year student at the Polish-Japanese Academy of Information Technology.
+            I'm really interested in the Machine Learning and Data Science Club.
+            My goal is to expand my practical knowledge and work with others to create interesting projects.
+            I'm eager to learn and contribute to the club's activities.
+        </p>
     </section>
     
     <section class="projects">
         <div class="project">
-            <h3><a href = "https://hanna-hk.github.io/Student_Performance_ML_project/">ML Project</a></h3>
-            <p>...</p>
+            <h3><a href = "https://hanna-hk.github.io/Student_Performance_ML_project/">Student Performance Predictor</a></h3>
+            <p>ML Project</p>
         </div>
         
         <div class="project">
-            <h3><a href="https://hanna-hk.github.io/Spam_Filter/">RNN-Powered Project</a></h3>
-            <p>...</p>
-        </div>
-        
-        <div class="project">
-            <h3>Project 3</h3>
-            <p>...</p>
+            <h3><a href="https://hanna-hk.github.io/Spam_Filter/">Spam Filter</a></h3>
+            <p>RNN-Powered Project</p>
         </div>
     </section>
     
     <section class="skills">
-        <h2>Skills</h2>
+        <h2>Technical Skills</h2>
         <ul>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
+            <li>Python</li>
+            <li>Flask</li>
+            <li>Pandas</li>
+            <li>NumPy</li>
+            <li>Scikit-learn</li>
+            <li>SciPy</li>
+            <li>NLTK</li>
+            <li>Matplotlib</li>
+            <li>Seaborn</li>
+            <li>TensorFlow</li>
+            <li>Keras</li>
+            <li>Dill</li>
+            <li>Kaggle</li>
+            <li>Jupyter Notebooks</li>
         </ul>
     </section>
     
